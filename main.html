@@ -6,6 +6,7 @@
         <input type="text" data-ng-model="new_party.description" />
         <input type="submit" value="add"
                data-ng-click="parties.save(new_party); new_party='';" />
+        <button data-ng-click="parties.remove()" >remove all</button>
     </form>
     <ul>
         <li ng-repeat="party in parties">
