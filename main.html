@@ -5,7 +5,7 @@
         <label>description:</label>
         <input type="text" data-ng-model="new_party.description" />
         <input type="submit" value="add"
-               data-ng-click="parties.push(new_party); new_party='';" />
+               data-ng-click="parties.save(new_party); new_party='';" />
     </form>
     <ul>
         <li ng-repeat="party in parties">
